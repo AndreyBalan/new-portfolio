@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import Logo from './Logo'
 import { useRouter } from 'next/router'
-import {TwitterIcon, DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon } from './Icons'
+import {TwitterIcon, TelegramIcon, GithubIcon, LinkedInIcon, FacebookIcon } from './Icons'
 import {motion} from 'framer-motion'
 
 const CustomLink = ({href, title, className=""}) => {
@@ -34,17 +34,10 @@ const NavBar = () => {
         </nav>
         
         <nav className='flex item-center justify-center flex-wrap'>
-            <motion.a href="https://twitter.com" target={'_blank'}
-            whileHover={{y:-2}}
-            whileTap={{scale:0.9}}
-            className='w-6 mr-3'
-            >
-                <TwitterIcon />     
-            </motion.a> 
             <motion.a href="https://github.com/AndreyBalan" target={'_blank'}
             whileHover={{y:-2}}
             whileTap={{scale:0.9}}
-            className='w-6 mx-3'
+            className='w-6 mr-3'
             >
                 <GithubIcon />     
             </motion.a> 
@@ -55,19 +48,26 @@ const NavBar = () => {
             >
                 <LinkedInIcon />     
             </motion.a> 
-            <motion.a href="https://pinterest.com/" target={'_blank'}
+            <motion.a href="https://www.facebook.com/profile.php?id=100004198513437" target={'_blank'}
             whileHover={{y:-2}}
             whileTap={{scale:0.9}}
             className='w-6 mx-3'
             >
-                <PinterestIcon />     
+                <FacebookIcon />     
             </motion.a> 
-            <motion.a href="https://dribbble.com/" target={'_blank'}
+            <motion.a href="https://twitter.com/AndrewBalan" target={'_blank'}
+            whileHover={{y:-2}}
+            whileTap={{scale:0.9}}
+            className='w-6 mx-3'
+            >
+                <TwitterIcon />     
+            </motion.a> 
+            <motion.a href="https://t.me/AndriiBalan" target={'_blank'}
             whileHover={{y:-2}}
             whileTap={{scale:0.9}}
             className='w-6 ml-3'
             >
-                <DribbbleIcon />     
+                <TelegramIcon />     
             </motion.a> 
             
         </nav>
