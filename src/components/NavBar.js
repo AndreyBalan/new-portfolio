@@ -3,10 +3,10 @@ import React from 'react'
 import Logo from './Logo'
 import { useRouter } from 'next/router'
 import {TwitterIcon, DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon } from './Icons'
-
+import {motion} from 'framer-motion'
 
 const CustomLink = ({href, title, className=""}) => {
-    const router = useRouter();
+    const router = useRouter()
     return(
         <Link href={href} className={`${className} relative group`}>
             {title}
@@ -34,21 +34,41 @@ const NavBar = () => {
         </nav>
         
         <nav className='flex item-center justify-center flex-wrap'>
-            <a href="https://twitter.com" target={'_blank'}>
+            <motion.a href="https://twitter.com" target={'_blank'}
+            whileHover={{y:-2}}
+            whileTap={{scale:0.9}}
+            className='w-6 mr-3'
+            >
                 <TwitterIcon />     
-            </a> 
-            <a href="https://github.com/" target={'_blank'}>
+            </motion.a> 
+            <motion.a href="https://github.com/AndreyBalan" target={'_blank'}
+            whileHover={{y:-2}}
+            whileTap={{scale:0.9}}
+            className='w-6 mx-3'
+            >
                 <GithubIcon />     
-            </a> 
-            <a href="https://www.linkedin.com/" target={'_blank'}>
+            </motion.a> 
+            <motion.a href="https://www.linkedin.com/in/andrii-balan/" target={'_blank'}
+            whileHover={{y:-2}}
+            whileTap={{scale:0.9}}
+            className='w-6 mx-3'
+            >
                 <LinkedInIcon />     
-            </a> 
-            <a href="https://pinterest.com/" target={'_blank'}>
+            </motion.a> 
+            <motion.a href="https://pinterest.com/" target={'_blank'}
+            whileHover={{y:-2}}
+            whileTap={{scale:0.9}}
+            className='w-6 mx-3'
+            >
                 <PinterestIcon />     
-            </a> 
-            <a href="https://dribbble.com/" target={'_blank'}>
+            </motion.a> 
+            <motion.a href="https://dribbble.com/" target={'_blank'}
+            whileHover={{y:-2}}
+            whileTap={{scale:0.9}}
+            className='w-6 ml-3'
+            >
                 <DribbbleIcon />     
-            </a> 
+            </motion.a> 
             
         </nav>
 
