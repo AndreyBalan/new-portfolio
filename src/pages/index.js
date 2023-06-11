@@ -20,10 +20,10 @@ export default function Home() {
                 />
             </Head>
             <TransitionEffect />
-            <main className="flex items-center text-dark w-full max-h-screen relative dark:text-light">
+            <main className="flex items-center text-dark w-full relative dark:text-light h-max">
                 <Layout className="pt-10">
-                    <div className="flex items-center justify-between w-full">
-                        <div className="w-1/2 flex justify-center">
+                    <div className="flex items-center justify-between w-full h-auto">
+                        <div className="w-1/2 flex justify-center ">
                             <Image
                                 src={profilePic}
                                 alt="Andrii Balan"
