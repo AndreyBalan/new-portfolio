@@ -26,6 +26,9 @@ export default function Home() {
                                 src={profilePic}
                                 alt="Andrii Balan"
                                 className="w-1/2 rounded-lg shadow-[0_20px_50px_rgba(27,_27,_27,_0.7)]"
+                                priority
+                                sizes="(max-width: 768px) 100vw,
+                                (max-width: 1200px) 50vw, 33vw"
                             />
                         </div>
                         <div className="w-1/2 flex flex-col items-center self-center">

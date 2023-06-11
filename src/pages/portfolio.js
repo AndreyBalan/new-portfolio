@@ -18,7 +18,14 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
                 href={link}
                 target="_blank"
                 className="w-1/2 cursor-pointer overflow-hidden rounded-lg">
-                <Image src={img} alt={title} className="w-full h-auto" />
+                <Image
+                    src={img}
+                    alt={title}
+                    className="w-full h-auto"
+                    priority
+                    sizes="(max-width: 768px) 100vw,
+                (max-width: 1200px) 50vw, 50vw"
+                />
             </Link>
             <div className="w-1/2 flex flex-col items-start justify-between pl-6">
                 <span className="text-primary font-medium text-xl dark:text-primaryDark">
@@ -62,7 +69,14 @@ const Project = ({ title, type, img, link, github }) => {
                 href={link}
                 target="_blank"
                 className="w-full cursor-pointer overflow-hidden rounded-lg">
-                <Image src={img} alt={title} className="w-full h-auto" />
+                <Image
+                    src={img}
+                    alt={title}
+                    className="w-full h-auto"
+                    priority
+                    sizes="(max-width: 768px) 100vw,
+                (max-width: 1200px) 50vw, 50vw"
+                />
             </Link>
             <div className="w-full flex flex-col items-start justify-between mt-4">
                 <span className="text-primary font-medium text-xl dark:text-primaryDark">
