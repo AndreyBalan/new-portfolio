@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
 
-const Layout = ({children, className=""}) => {
-  return (
-    <div className={`w-full h-auto inline-block z-0 bg-light p-32 ${className}`}>
-        {children}
-    </div>
-  )
-}
+const Layout = ({ children, className = "" }) => {
+    return (
+        <div
+            className={`w-full h-auto inline-block z-0 bg-light p-32 dark:bg-dark ${className}`}>
+            {children}
+        </div>
+    );
+};
 
-export default Layout
+export default Layout;
