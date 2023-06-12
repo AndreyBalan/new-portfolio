@@ -59,7 +59,8 @@ export default function Home() {
                                     className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark 
                     border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light"
                                     download={true}>
-                                    Resume <LinkArrow className={"w-6 ml-1"} />
+                                    Resume{" "}
+                                    <LinkArrow className={"w-6 h-6 ml-1"} />
                                 </Link>
                                 <Link
                                     href="mailto:balan.andrey.93@gmail.com"
