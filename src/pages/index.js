@@ -21,24 +21,24 @@ export default function Home() {
             </Head>
             <TransitionEffect />
             <main className="flex items-center text-dark w-full relative dark:text-light h-max">
-                <Layout className="pt-10">
-                    <div className="flex items-center justify-between w-full h-auto">
-                        <div className="w-1/2 flex justify-center ">
+                <Layout className="pt-10 md:pt-16 sm:pt-8">
+                    <div className="flex items-center justify-between w-full h-auto lg:flex-col">
+                        <div className="w-1/2 flex justify-center md:w-3/4">
                             <Image
                                 src={profilePic}
                                 alt="Andrii Balan"
-                                className="w-1/2 rounded-lg shadow-[0_20px_50px_rgba(27,_27,_27,_0.7)]"
+                                className="w-1/2 rounded-lg shadow-[0_20px_50px_rgba(27,_27,_27,_0.7)] lg:hidden md:inline-block md:w-full"
                                 priority
                                 sizes="(max-width: 768px) 100vw,
                                 (max-width: 1200px) 50vw, 33vw"
                             />
                         </div>
-                        <div className="w-1/2 flex flex-col items-center self-center">
+                        <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center md:mt-8">
                             <AnimatedText
                                 text="Andrii Balan."
-                                className="text-6xl text-left"
+                                className="text-6xl text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
                             />
-                            <p className="my-4 text-base font-medium">
+                            <p className="my-4 text-base font-medium md:text-sm">
                                 Welcome! I am a front-end developer with a
                                 passion for creating beautiful and interactive
                                 user interfaces. Here you will find information
@@ -52,12 +52,12 @@ export default function Home() {
                                 glad to help you bring your ideas and tasks in
                                 web development to life.
                             </p>
-                            <div className="flex items-center self-start mt-2">
+                            <div className="flex items-center self-start mt-2 lg:self-center">
                                 <Link
                                     href="/dummy.pdf"
                                     target={"_blank"}
                                     className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark 
-                    border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light"
+                    border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light transition-all duration-300 ease-out md:p-2 md:mx-4 md:text-base"
                                     download={true}>
                                     Resume{" "}
                                     <LinkArrow className={"w-6 h-6 ml-1"} />
@@ -65,19 +65,18 @@ export default function Home() {
                                 <Link
                                     href="mailto:balan.andrey.93@gmail.com"
                                     target={"_blank"}
-                                    className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light">
+                                    className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base">
                                     Contact
                                 </Link>
                             </div>
                         </div>
                     </div>
                 </Layout>
-
-                <HireMe />
-                <div className="fixed right-8 bottom-24 inline-block w-24">
-                    <Image src={vader} alt="Vader" className="w-full h-auto" />
-                </div>
             </main>
+            <HireMe />
+            <div className="fixed right-8 bottom-24 inline-block w-24 md:hidden">
+                <Image src={vader} alt="Vader" className="w-full h-auto" />
+            </div>
         </>
     );
 }
