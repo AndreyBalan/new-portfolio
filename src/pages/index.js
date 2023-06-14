@@ -61,7 +61,9 @@ export default function Home() {
                                     download={true}>
                                     Resume{" "}
                                     <LinkArrow
-                                        className={"w-6 h-6 ml-1 md:!h-6"}
+                                        className={
+                                            "w-6 h-6 ml-1 md:!h-6 md:!w-6"
+                                        }
                                     />
                                 </Link>
                                 <Link
