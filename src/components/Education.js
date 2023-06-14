@@ -45,25 +45,28 @@ const Education = () => {
 
                 <ul className="w-full flex flex-col items-start space-between ml-4 xs:ml-2">
                     <Details
-                        type="Bachelor Of Science In Computer Science"
-                        time="2016-2020"
-                        place="Massachusetts Institute Of Technology (MIT)"
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                Intelligence."
+                        type="Master in Logistics"
+                        time="2010-2015"
+                        place="Vinnytsia Institute of Trade and Economics | Vinnytsia"
+                        info="Master's Degree in Logistics. Studied economic cybernetics. Master's Degree in Logistics. Studied economic cybernetics. I showed myself as a hardworking student."
                     />
                     <Details
-                        type="Master Of Computer Science"
-                        time="2016-2020"
-                        place="Massachusetts Institute Of Technology (MIT)"
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                Intelligence."
+                        type="QA Engineer"
+                        time="2017"
+                        place="SkillUp IT School | Kyiv"
+                        info="I acquired essential skills as a QA Engineer. Through comprehensive training and hands-on projects, I gained proficiency in various aspects of software testing, including test planning, test case design, and test execution. I also learned to utilize industry-standard testing tools and methodologies to ensure the quality and reliability of software applications."
                     />
                     <Details
-                        type="Online Coursework"
-                        time="2016-2020"
-                        place="Massachusetts Institute Of Technology (MIT)"
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                Intelligence."
+                        type="HTML / CSS courses"
+                        time="2019"
+                        place="EasyCode IT School | Online"
+                        info="I delved into the exciting world of web development through their HTML/CSS courses. With hands-on learning and expert guidance, I gained comprehensive knowledge and practical skills in creating and styling web pages. Through interactive projects and real-world examples, I mastered the art of crafting engaging and responsive websites."
+                    />
+                    <Details
+                        type="Frontend + JavaScript + React"
+                        time="2022-2023"
+                        place="Udemy | Online"
+                        info=" I mastered the dynamic trio of frontend development, JavaScript, and React. Through their comprehensive courses, I gained expertise in building interactive and user-friendly web applications. From manipulating the DOM with JavaScript to leveraging the power of React components, I learned to create seamless and engaging user experiences. "
                     />
                 </ul>
             </div>
