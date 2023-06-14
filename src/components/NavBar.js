@@ -191,6 +191,7 @@ const NavBar = () => {
                             target={"_blank"}
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.9 }}
+                            aria-label="social link"
                             className="w-6 mr-3 bg-light rounded-full dark:bg-dark sm:mx-1">
                             <GithubIcon />
                         </motion.a>
@@ -199,6 +200,7 @@ const NavBar = () => {
                             target={"_blank"}
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.9 }}
+                            aria-label="social link"
                             className="w-6 mx-3 sm:mx-1">
                             <LinkedInIcon />
                         </motion.a>
@@ -207,6 +209,7 @@ const NavBar = () => {
                             target={"_blank"}
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.9 }}
+                            aria-label="social link"
                             className="w-6 mx-3 sm:mx-1 ">
                             <FacebookIcon />
                         </motion.a>
@@ -215,6 +218,7 @@ const NavBar = () => {
                             target={"_blank"}
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.9 }}
+                            aria-label="social link"
                             className="w-6 mx-3 sm:mx-1">
                             <TwitterIcon />
                         </motion.a>
@@ -223,11 +227,13 @@ const NavBar = () => {
                             target={"_blank"}
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.9 }}
+                            aria-label="social link"
                             className="w-6 ml-3 sm:mx-1">
                             <TelegramIcon />
                         </motion.a>
 
                         <button
+                            aria-label="theme switcher"
                             onClick={() =>
                                 setMode(mode === "light" ? "dark" : "light")
                             }
