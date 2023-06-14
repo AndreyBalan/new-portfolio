@@ -27,7 +27,7 @@ export default function Home() {
                             <Image
                                 src={profilePic}
                                 alt="Andrii Balan"
-                                className="w-1/2 rounded-lg shadow-[0_20px_50px_rgba(27,_27,_27,_0.7)] lg:hidden md:inline-block md:w-full"
+                                className="w-1/2 rounded-lg shadow-[0_20px_50px_rgba(27,_27,_27,_0.7)] lg:hidden md:inline-block md:w-full max-w-full max-h-full"
                                 priority
                                 sizes="(max-width: 768px) 100vw,
                                 (max-width: 1200px) 50vw, 33vw"
