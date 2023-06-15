@@ -47,6 +47,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
             onClick={handleClick}>
             {title}
 
+            <span className="sr-only">Menu Button</span>
             <span
                 className={`
                 h-[1px] inline-block w-0 bg-light absolute left-0 -bottom-0.5
