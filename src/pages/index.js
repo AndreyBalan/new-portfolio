@@ -44,7 +44,7 @@ export default function Home() {
                                 text="Andrii Balan."
                                 className="text-6xl text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
                             />
-                            <p className="my-4 text-xl font-medium md:text-sm underline text-dark/50 dark:text-light/50">
+                            <p className="my-4 text-xl font-medium md:text-sm underline text-dark/75 dark:text-light/75">
                                 Crafting Engaging Web Experiences
                             </p>
                             <p className="my-4 text-base font-medium md:text-sm">
