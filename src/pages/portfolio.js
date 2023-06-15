@@ -35,6 +35,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
                     width={490}
                     height={650}
                     priority={true}
+                    as="image"
                     sizes="(max-width: 768px) 100vw,
                 (max-width: 1200px) 50vw, 50vw"
                 />
@@ -88,6 +89,7 @@ const Project = ({ title, type, img, link, github }) => {
                     width={700}
                     height={350}
                     priority={true}
+                    as="image"
                     sizes="(max-width: 768px) 100vw,
                 (max-width: 1200px) 50vw, 50vw"
                 />

@@ -35,6 +35,7 @@ export default function Home() {
                                 width={410}
                                 height={548}
                                 priority={true}
+                                as="image"
                                 sizes="(max-width: 768px) 100vw,
                                 (max-width: 1200px) 50vw, 33vw"
                             />
