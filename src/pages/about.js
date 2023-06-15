@@ -52,7 +52,7 @@ const about = () => {
             <main className="flex w-full flex-col items-center justify-center dark:text-light">
                 <Layout className="pt-16">
                     <AnimatedText
-                        text="Passion Fuels Purpose!"
+                        text="Discover Who I Am"
                         className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
                     />
                     <div className="grid w-full grid-cols-8 gap 16 sm:gap-8">
@@ -104,7 +104,9 @@ const about = () => {
                                 src={profilePic}
                                 alt="Andrii Balan"
                                 className="w-[90%] h-auto rounded-2xl max-w-full max-h-full"
-                                priority
+                                width={410}
+                                height={548}
+                                priority={true}
                                 sizes="(max-width: 768px) 100vw,
                                 (max-width: 1200px) 50vw, 50vw"
                             />
@@ -122,7 +124,7 @@ const about = () => {
 
                             <div className="flex flex-col items-end justify-center xl:items-center">
                                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-4xl xs:text:4xl">
-                                    <AnimatedNumbers value={20} />+
+                                    <AnimatedNumbers value={50} />+
                                 </span>
                                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                                     projects completed
@@ -131,10 +133,10 @@ const about = () => {
 
                             <div className="flex flex-col items-end justify-center xl:items-center">
                                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-4xl xs:text:4xl">
-                                    <AnimatedNumbers value={2} />+
+                                    <AnimatedNumbers value={1} />+
                                 </span>
                                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
-                                    years of experience
+                                    year of experience
                                 </h2>
                             </div>
                         </div>

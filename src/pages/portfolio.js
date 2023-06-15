@@ -32,7 +32,9 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
                     src={img}
                     alt={title}
                     className="w-full h-auto hover:scale-[1.05] transition-all"
-                    priority
+                    width={490}
+                    height={650}
+                    priority={true}
                     sizes="(max-width: 768px) 100vw,
                 (max-width: 1200px) 50vw, 50vw"
                 />
@@ -83,7 +85,9 @@ const Project = ({ title, type, img, link, github }) => {
                     src={img}
                     alt={title}
                     className="w-full h-auto hover:scale-[1.05] transition-all"
-                    priority
+                    width={700}
+                    height={350}
+                    priority={true}
                     sizes="(max-width: 768px) 100vw,
                 (max-width: 1200px) 50vw, 50vw"
                 />
