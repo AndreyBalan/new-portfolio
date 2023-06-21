@@ -28,7 +28,7 @@ export default function Home() {
                 <Layout className="pt-10 md:pt-16 sm:pt-8">
                     <div className="flex items-center justify-between w-full h-auto lg:flex-col">
                         <div className="w-1/2 flex justify-center md:w-3/4">
-                            <Image
+                            {/* <Image
                                 src={profilePic}
                                 alt="Andrii Balan"
                                 className="w-1/2 rounded-lg shadow-[0_20px_50px_rgba(27,_27,_27,_0.7)] lg:hidden md:inline-block md:w-full max-w-full max-h-full"
@@ -38,6 +38,16 @@ export default function Home() {
                                 as="image"
                                 sizes="(max-width: 768px) 100vw,
                                 (max-width: 1200px) 50vw, 33vw"
+                            /> */}
+                            <Image
+                                src={profilePic}
+                                alt="Andrii Balan"
+                                className="w-1/2 rounded-lg shadow-[0_20px_50px_rgba(27,_27,_27,_0.7)] lg:hidden md:inline-block md:w-full max-w-full max-h-full"
+                                width={410}
+                                height={548}
+                                priority={true}
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                loading="eager"
                             />
                         </div>
                         <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center md:my-8">
