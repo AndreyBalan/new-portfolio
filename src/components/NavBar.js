@@ -71,7 +71,7 @@ const NavBar = () => {
     return (
         <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8">
             <button
-                className="flex-col justify-center items-center hidden lg:flex fixed"
+                className="flex-col justify-center items-center hidden lg:flex"
                 onClick={handleClick}>
                 <span className="sr-only">Menu Button</span>
                 <span
@@ -245,13 +245,9 @@ const NavBar = () => {
                                 setMode(mode === "light" ? "dark" : "light")
                             }
                             className={`ml-3 flex items-center justify-center rounded-full w-6 h-6
-                    ${
-                        mode === "light"
-                            ? "bg-dark text-light"
-                            : "bg-light text-dark"
-                    }
-                    `}>
-                            <span className="sr-only">Theme Switcher</span>
+        ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
+    `}
+                            aria-label="Toggle Theme">
                             {mode === "dark" ? (
                                 <SunIcon className={"fill-dark"} />
                             ) : (
