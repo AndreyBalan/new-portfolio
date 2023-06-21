@@ -95,7 +95,7 @@ export default function Home() {
                     </div>
                 </Layout>
             </main>
-            {/* <HireMe /> */}
+            <HireMe />
             <div className="fixed right-8 bottom-24 inline-block w-24 md:hidden dark:hidden">
                 <Image src={vader} alt="Vader" className="w-full h-auto" />
             </div>

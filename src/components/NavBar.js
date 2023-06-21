@@ -105,6 +105,7 @@ const NavBar = () => {
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className="w-6 mr-3">
+                        <span className="sr-only">GitHub</span>
                         <GithubIcon />
                     </motion.a>
                     <motion.a
@@ -113,6 +114,7 @@ const NavBar = () => {
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className="w-6 mx-3">
+                        <span className="sr-only">LinkedIn</span>
                         <LinkedInIcon />
                     </motion.a>
                     <motion.a
@@ -121,6 +123,7 @@ const NavBar = () => {
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className="w-6 mx-3">
+                        <span className="sr-only">Facebook</span>
                         <FacebookIcon />
                     </motion.a>
                     <motion.a
@@ -129,6 +132,7 @@ const NavBar = () => {
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className="w-6 mx-3">
+                        <span className="sr-only">Twitter</span>
                         <TwitterIcon />
                     </motion.a>
                     <motion.a
@@ -137,6 +141,7 @@ const NavBar = () => {
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className="w-6 ml-3">
+                        <span className="sr-only">Telegram</span>
                         <TelegramIcon />
                     </motion.a>
 
@@ -151,6 +156,7 @@ const NavBar = () => {
                             : "bg-light text-dark"
                     }
                     `}>
+                        <span className="sr-only">Theme Switcher</span>
                         {mode === "dark" ? (
                             <SunIcon className={"fill-dark"} />
                         ) : (
