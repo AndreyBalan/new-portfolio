@@ -28,17 +28,6 @@ export default function Home() {
                 <Layout className="pt-10 md:pt-16 sm:pt-8">
                     <div className="flex items-center justify-between w-full h-auto lg:flex-col">
                         <div className="w-1/2 flex justify-center md:w-3/4">
-                            {/* <Image
-                                src={profilePic}
-                                alt="Andrii Balan"
-                                className="w-1/2 rounded-lg shadow-[0_20px_50px_rgba(27,_27,_27,_0.7)] lg:hidden md:inline-block md:w-full max-w-full max-h-full"
-                                width={410}
-                                height={548}
-                                priority={true}
-                                as="image"
-                                sizes="(max-width: 768px) 100vw,
-                                (max-width: 1200px) 50vw, 33vw"
-                            /> */}
                             <Image
                                 src={profilePic}
                                 alt="Andrii Balan"
@@ -71,7 +60,7 @@ export default function Home() {
                             <div className="flex items-center self-start mt-2 lg:self-center">
                                 <Link
                                     key="resume-link"
-                                    href="/dummy.pdf"
+                                    href="/Andrii_Balan_CV.pdf"
                                     target={"_blank"}
                                     className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark 
                     border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light transition-all duration-300 ease-out md:p-2 md:mx-4 md:text-base"
