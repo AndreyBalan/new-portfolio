@@ -23,7 +23,7 @@ export default function Home() {
                     content="Andrii Balan, front-end developer, Ukraine, web development, portfolio, responsive web design, user experience, HTML, CSS, JavaScript, web projects"
                 />
             </Head>
-            <TransitionEffect key="transition-effect" />
+            {/* <TransitionEffect key="transition-effect" /> */}
             <main className="flex items-center text-dark w-full relative dark:text-light h-max">
                 <Layout className="pt-10 md:pt-16 sm:pt-8">
                     <div className="flex items-center justify-between w-full h-auto lg:flex-col">
