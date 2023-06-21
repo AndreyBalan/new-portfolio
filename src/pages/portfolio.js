@@ -14,8 +14,8 @@ import oldPortfolio from "../../public/images/projects/old-portfolio.jpg";
 import runsmart from "../../public/images/projects/runsmart.jpg";
 import tuotown from "../../public/images/projects/tuotown.jpg";
 import uber from "../../public/images/projects/uber.jpg";
-
 import TransitionEffect from "@/components/TransitionEffect";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
     return (
@@ -233,6 +233,7 @@ const portfolio = () => {
                             />
                         </div>
                     </div>
+                    <ScrollToTop />
                 </Layout>
             </main>
         </>

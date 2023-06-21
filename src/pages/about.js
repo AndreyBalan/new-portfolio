@@ -9,6 +9,7 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import TransitionEffect from "@/components/TransitionEffect";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const AnimatedNumbers = ({ value }) => {
     const ref = useRef(null);
@@ -146,6 +147,7 @@ const about = () => {
                     <Skills />
                     <Experience />
                     <Education />
+                    <ScrollToTop />
                 </Layout>
             </main>
         </>
